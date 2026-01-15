@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World! Test change");
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        int sum = 0;
+        for(int number = 1; number < 21; number++)
+        {
+            if(number%3 == 0)
+            {
+                sum = sum + number;
+            }
+        }
+        Console.WriteLine($"The answer is {sum}");
+    }
+}
